@@ -27,7 +27,8 @@
     height: 40px;
 }
 .page-header__telephone{
-    // margin-left: 50px;
+    display: inline-flex;
+    margin-left: 50px;
     font-size: 18px;
     line-height: 1.25;
     text-transform: uppercase;
@@ -35,11 +36,23 @@
     color: var(--main-text-color);
 }
 .page-header__telephone::before{
-    content: "";
+    content: url(../../images/smartphone-header.svg);
     width: 24px;
     height: 24px;
     margin-right: 5px;
-    background-color: aqua;
-    // background-image: url(../../images/logo-footer.png);
-    background-size: contain;
+}
+.page-nav{
+    margin-left: auto;
+}
+.page-nav__list{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.page-nav__link{
+    font-size: 18px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    
+    color: var(--main-text-color);
 }
