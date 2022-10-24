@@ -62,4 +62,52 @@ body {
   margin-right: auto;
   padding-left: 51px;
   padding-right: 51px;
+}
+
+.page-header {
+  background-color: #fff;
+}
+
+.header__first-part {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #1E2E36;
+}
+
+.page-header__social {
+  font-size: 18px;
+  line-height: 1.25;
+  color: var(--main-text-color);
+}
+
+.page-header__social-list {
+  display: flex;
+  margin-left: 5px;
+  column-gap: 5px;
+}
+
+.page-header__social-lis__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.page-header__telephone {
+  font-size: 18px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+
+.page-header__telephone::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  background-color: aqua;
+  background-size: contain;
 }/*# sourceMappingURL=main.css.map */
