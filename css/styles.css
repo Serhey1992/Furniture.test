@@ -634,7 +634,7 @@ a {
 .fix-btn{
     position: fixed;
     left: 36px;
-    bottom: 500px;
+    bottom: 50px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
