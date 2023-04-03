@@ -4,122 +4,448 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин меблів</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="page">
     <header class="page-header">
-        <div class="container">
-            <div class="header__first-part">
-                <p class="page-header__social">Ми в соціальних мережах:</p>
-                <ul class="page-header__social-list">
-                    <li class="page-header__social-lis__item">
-                        <svg class="social-icon" width="20px" height="20px">
-                            <use class="social-icon__item" href="./images/sprait.svg#icon-telegram-header"></use>
-                        </svg>
+        <div class="conteiner">
+            <div class="page-header__contacts">
+                <p class="page-header__contacts-text">Ми в соціальних мережах:</p>
+                <ul class="page-header__contacts-list">
+                    <li class="page-header__contacts-item">
+                        <a class="page-header__contacts-link" href="">
+                            <img src="./images/h-telegram.svg" alt="іконка телеграму">
+                        </a>
                     </li>
-                    <li class="page-header__social-lis__item">
-                        <svg class="social-icon" width="20px" height="20px">
-                            <use class="social-icon__item" href="./images/sprait.svg#icon-facebook-header"></use>
-                        </svg>
+                    <li class="page-header__contacts-item">
+                        <a class="page-header__contacts-link" href="">
+                            <img src="./images/h-facebook.svg" alt=" іконка фейсбуку">
+                        </a>
                     </li>
-                    <li class="page-header__social-lis__item">
-                        <svg class="social-icon" width="20px" height="20px">
-                            <use class="social-icon__item" href="./images/sprait.svg#icon-insta-header"></use>
-                        </svg>
+                    <li class="page-header__contacts-item">
+                        <a class="page-header__contacts-link" href="">
+                            <img src="./images/h-instagram.svg" alt=" іконка інстаграму">
+                        </a>
                     </li>
                 </ul>
-                <a href="tel:0991112233" class="page-header__telephone">(099) 111 22 33 </a>
+                <a class="page-header__number" href="tel:0991112233">(099) 111 22 33</a>
                 <nav class="page-nav">
                     <ul class="page-nav__list">
-                        <li class="page-nav__item"><a href="" class="page-nav__link page-nav__link--current">Головна</a></li>
-                        <li class="page-nav__item"><a href="" class="page-nav__link">АкцІї</a></li>
-                        <li class="page-nav__item"><a href="" class="page-nav__link">Доставка та оплата</a></li>
-                        <li class="page-nav__item"><a href="" class="page-nav__link">про нас</a></li>
-                        <li class="page-nav__item"><a href="" class="page-nav__link">контакти</a></li>
+                        <li><a class="page-nav__list-link" href="/index.html">Головна</a></li>
+                        <li><a class="page-nav__list-link" href="">АкцІї</a></li>
+                        <li><a class="page-nav__list-link" href="">Доставка та оплата</a></li>
+                        <li><a class="page-nav__list-link" href="">про нас</a></li>
+                        <li><a class="page-nav__list-link" href="">контакти</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <section class="assortment-section">
-            <h6 class="visually-hidden">assortment</h6>
-            <div class="container container---centering">
-                <ul class="assortment-list">
-                    <li class="assortment-list__item"><button class="assortment-list__button" type="button">Дивани
-                        <svg class="assortment-btn-icon" width="20px" height="20px">
-                            <use href="./images/sprait.svg#icon-chevron"></use>
-                        </svg>
-                    </button></li>
-                    <li class="assortment-list__item"><button class="assortment-list__button" type="button">ліжка
-                        <svg class="assortment-btn-icon" width="20px" height="20px">
-                            <use href="./images/sprait.svg#icon-chevron"></use>
-                        </svg>
-                    </button></li>
-                    <li class="assortment-list__item"><button class="assortment-list__button" type="button">Крісла
-                        <svg class="assortment-btn-icon" width="20px" height="20px">
-                            <use href="./images/sprait.svg#icon-chevron"></use>
-                        </svg>
-                    </button></li>
-                    <li class="assortment-list__item"><button class="assortment-list__button" type="button">комоди
-                        <svg class="assortment-btn-icon" width="20px" height="20px">
-                            <use href="./images/sprait.svg#icon-chevron"></use>
-                        </svg>
-                    </button></li>
-                    <li class="assortment-list__item"><button class="assortment-list__button" type="button">шафи
-                        <svg class="assortment-btn-icon" width="20px" height="20px">
-                            <use href="./images/sprait.svg#icon-chevron"></use>
-                        </svg>
-                    </button></li>
-                    <li class="assortment-list__item"><button class="assortment-list__button" type="button">Кухня
-                        <svg class="assortment-btn-icon" width="20px" height="20px">
-                            <use href="./images/sprait.svg#icon-chevron"></use>
-                        </svg>                       
-                    </button></li>
+        <section class="header-assortment">
+            <div class="conteiner header-conteiner">
+                <ul class="header-assortment__list">
+                    <li><a  class="header-assortment__list-link" href="">Дивани</a></li>
+                    <li><a  class="header-assortment__list-link" href="">ліжка</a></li>
+                    <li><a  class="header-assortment__list-link" href="">Крісла</a></li>
+                    <li><a  class="header-assortment__list-link" href="">комоди</a></li>
+                    <li><a  class="header-assortment__list-link" href="">шафи</a></li>
+                    <li><a  class="header-assortment__list-link" href="">Кухня</a></li>
                 </ul>
-                <a href="./index.html" class="logo"><img src="./images/logo-header.png" alt="Логотип">
-                    <span class="logo-leter">F</span>urniture.test
+                <a class="logo" href="/index.html">
+                    <img class="logo-img" src="./images/content/header-logo.png" alt="логотип">
+                    <span class="logo-letter">F</span> urniture.test
                 </a>
-                <ul class="client-list">
-                    <li class="client-list__item">
-                        <button class="client-list__btn-cart">
-                            <span>
-                                <svg class="client-list__btn__icon" width="30px" height="30px">
-                                    <use href="./images/sprait.svg#icon-shopping-cart"></use>
-                                </svg>
-                            </span>Кошик
-                        </button>
-                    </li>
-                    <li class="client-list__item"><button class="client-list__btn">Замовити дзвінок</button></li>
+                <ul class="header-assortment__btn-list">
+                    <li><a class="header-assortment__basket" href=""><img class="basket-img" src="./images/content/shopping-cart.svg" alt="іконка кошика"> Кошик</a></li>
+                    <li><a class="header-assortment__btn" href="">Замовити дзвінок</a></li>
                 </ul>
             </div>
         </section>
     </header>
-    <section class="slider">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./images/hero-bgi.jpg" class="d-block w-100" alt="...">
+    <main>
+        <section class="slider-box">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="slider-img" src="./images/content/slider-img.jpg" alt="1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="slider-img" src="./images/content/slider-img.jpg" alt="2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="slider-img" src="./images/content/slider-img.jpg" alt="3">
+                    </div>
+                    ...
                 </div>
-                <div class="carousel-item">
-                    <img src="./images/hero-bgi.jpg" class="d-block w-100" alt="...">
+                <div class="swiper-pagination"></div>
+                <div class="slider-info">
+                    <strong class="slider-info-news">Новинка!</strong>
+                    <h2 class="slider-info-title">Ліжко Ornella</h2>
+                    <p class="slider-info-text">Це новий рівень комфортного сну</p>
+                    <a href="" class="slider-info-link">Детальніше</a>
+                    <div class="counter-conteiner">
+                        <span class="counter-point counter-point--first">01</span>
+                        <span class="counter-point counter-point--second">/04</span>
+                    </div>
+                    <button type="button" class="slider-info-btn slider-info-btn--left">
+                        <svg class="slider-info-btn-icon" width="7" height="12">
+                            <use href="./images/sprayt.svg#icon-Arrow-Left"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="slider-info-btn slider-info-btn--right">
+                        <svg class="slider-info-btn-icon" width="7" height="12">
+                            <use href="./images/sprayt.svg#icon-Arrow-Right"></use>
+                        </svg>
+                    </button>  
                 </div>
-                <div class="carousel-item">
-                    <img src="./images/hero-bgi.jpg" class="d-block w-100" alt="...">
+        </section>
+        <section class="advantages">
+            <h2 class="title">Наші переваги</h2>
+            <div class="conteiner">
+                <div class="advantages-conteiner">
+                    <ul class="advantages-list">
+                        <li class="advantages-list-item">
+                            <a href="" class="advantages-list-link">
+                                <div class="advantages-list-img-conteiner">
+                                    <img src="./images/content/advantages-1.jpg" alt="1">
+                                    <div class="overlay">
+                                        <h3 class="overlay-title">Меблі преміум класу</h3>
+                                        <p class="overlay-text">Хочете придбати щось унікальне тоді вам до нас.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="advantages-list-item">
+                            <a href="" class="advantages-list-link">
+                                <div class="advantages-list-img-conteiner">
+                                    <img src="./images/content/advantages-2.jpg" alt="2">
+                                    <div class="overlay">
+                                        <h3 class="overlay-title">Надійність</h3>
+                                        <p class="overlay-text">За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="advantages-list-item">
+                            <a href="" class="advantages-list-link">
+                                <div class="advantages-list-img-conteiner">
+                                    <img src="./images/content/advantages-3.jpg" alt="3">
+                                    <div class="overlay">
+                                        <h3 class="overlay-title">Безкоштовна доставка</h3>
+                                        <p class="overlay-text"> Купуючи у нас, ви завжди отримаєте безкоштовну доставку до ваштх дверей.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <button type="button" class="advantages-btn advantages-btn--left">
+                        <svg class="advantages-btn-icon" width="7" height="12">
+                            <use href="./images/sprayt.svg#icon-Arrow-Left-White"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="advantages-btn advantages-btn--right">
+                        <svg class="advantages-btn-icon" width="7" height="12">
+                            <use href="./images/sprayt.svg#icon-Arrow-Right-Black"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        </section>
+        <section class="category">
+            <div class="conteiner">
+                <h2 class="title">Категорії товарів</h2>
+                <ul class="category-btn-list">
+                    <li>
+                        <button type="button" class="category-btn">
+                            <svg class="category-btn__icon" width="100" height="100">
+                                <use href="./images/sprayt.svg#category-btn-1"></use>
+                            </svg>
+                            Дивани
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="category-btn category-btn--current">
+                            <svg class="category-btn__icon" width="100" height="100">
+                                <use href="./images/sprayt.svg#category-btn-2"></use>
+                            </svg>
+                            Ліжка
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="category-btn">
+                            <svg class="category-btn__icon" width="100" height="100">
+                                <use href="./images/sprayt.svg#category-btn-3"></use>
+                            </svg>
+                            Крісла
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="category-btn">
+                            <svg class="category-btn__icon" width="100" height="100">
+                                <use href="./images/sprayt.svg#category-btn-4"></use>
+                            </svg>
+                            комоди
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="category-btn">
+                            <svg class="category-btn__icon" width="100" height="100">
+                                <use href="./images/sprayt.svg#category-btn-5"></use>
+                            </svg>
+                            Шафи
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="category-btn">
+                            <svg class="category-btn__icon" width="100" height="100">
+                                <use href="./images/sprayt.svg#category-btn-6"></use>
+                            </svg>
+                            Кухня
+                        </button>
+                    </li>
+                </ul>
+                <ul class="category-gallery-list">
+                    <li class="category-gallery-list__item">
+                        <a class="category-gallery-list__link" href="">
+                            <div class="gallery-img-container">
+                                <img src="./images/content/category-1.jpg" alt="перша модель ліжка">
+                                <b class="new-item">Новинка</b>
+                            </div>
+                            <div class="gallery-text-conteiner">
+                                <h3 class="gallery-title">Ліжко Рамона</h3>
+                                <p class="gallery-price">8 999 грн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-gallery-list__item">
+                        <a class="category-gallery-list__link" href="">
+                            <div class="gallery-img-container">
+                                <img src="./images/content/category-2.jpg" alt="друга модель ліжка">
+                                <b class="popular-item">ХІт продаж</b>
+                                <b class="promotional-item">Акція</b>
+                            </div>
+                            <div class="gallery-text-conteiner">
+                                <h3 class="gallery-title">Ліжко Честер</h3>
+                                <div class="new-price-conteiner">
+                                    <p class="gallery-price gallery-price--promotional">8 999 грн</p>
+                                    <p class="gallery-old-price">8 999 грн</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-gallery-list__item">
+                        <a class="category-gallery-list__link" href="">
+                            <div class="gallery-img-container">
+                                <img src="./images/content/category-3.jpg" alt="третя модель ліжка">
+                            </div>
+                            <div class="gallery-text-conteiner">
+                                <h3 class="gallery-title">Ліжко Венеція люкс</h3>
+                                <p class="gallery-price">8 999 грн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-gallery-list__item">
+                        <a class="category-gallery-list__link" href="">
+                            <div class="gallery-img-container">
+                                <img src="./images/content/category-4.jpg" alt="четверта модель ліжка">
+                                <b class="new-item">Новинка</b>
+                            </div>
+                            <div class="gallery-text-conteiner">
+                                <h3 class="gallery-title">Ліжко Імперія</h3>
+                                <p class="gallery-price">8 999 грн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-gallery-list__item">
+                        <a class="category-gallery-list__link" href="">
+                            <div class="gallery-img-container">
+                                <img src="./images/content/category-5.jpg" alt="пята модель ліжка">
+                            </div>
+                            <div class="gallery-text-conteiner">
+                                <h3 class="gallery-title">Ліжко Адель</h3>
+                                <p class="gallery-price">8 999 грн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-gallery-list__item">
+                        <a class="category-gallery-list__link" href="">
+                            <div class="gallery-img-container">
+                                <img src="./images/content/category-6.jpg" alt="шоста модель ліжка">
+                                <b class="popular-item">ХІт продаж</b>
+                                <b class="promotional-item">Акція</b>
+                            </div>
+                            <div class="gallery-text-conteiner">
+                                <h3 class="gallery-title">Ліжко Атлант</h3>
+                                <div class="new-price-conteiner">
+                                    <p class="gallery-price gallery-price--promotional">8 999 грн</p>
+                                    <p class="gallery-old-price">8 999 грн</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <a class="category-link" type="button">В каталог</a>
+            </div>
+
+        </section>
+        <section class="about">
+        <h2 class="title">Про нас</h2>
+        <div class="about-conteiner">
+            <p class="about__text"><span class="about__text-word">"Furniture"</span> – "Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p class="about__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p class="about__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis
+                aute irure</p>
         </div>
-    </section>
+        <img class="about__img" src="./images/content/about-bgi.jpg" alt="фонова картинка" width="1407">
+        </section>
+        <section class="question">
+            <h2 class="title">Залишились питання?</h2>
+            <img src="./images/content/question-bgi.jpg" alt="фонова картинка" width="1561">
+            <div class="question-conteiner">
+                <h3 class="form-title">Замовте консультацію</h3>
+                <form class="question-form">
+                    <input class="question-form__input" type="text" name="name" placeholder="Віталій">
+                    <input class="question-form__input" type="tel" name="phone-number" placeholder="Номер телефону">
+                    <button class="question-btn" type="submit">ВІдправити</button>
+                </form>
+                <p class="question-text">Залиште заявку або телефонуйте за номером <b>(099) 111 22 33</b>, 
+                    і наш менеджер звяжеться з вами для кваліфікованої
+                консультації.</p>
+            </div>
+            <button type="button" class="fix-btn">
+                <svg class="fix-btn-icon" width="20" height="24">
+                    <use href="./images/sprayt.svg#icon-Arrow-Top"></use>
+                </svg>
+            </button>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-wraper">
+            <div class="footer-conteiner">
+                <a class="logo logo-footer" href="/index.html">
+                    <img class="logo-img" src="./images/content/footer-logo.png" alt="логотип">
+                    <span class="logo-letter">F</span> urniture.test
+                </a>
+                <div class="footer-centering">
+                    <ul class="footer-assortment-list">
+                        <li class="footer-assortment-list_item">
+                            <a class="footer-assortment-list_link" href="">Дивани</a>
+                        </li>
+                        <li class="footer-assortment-list_item">
+                            <a class="footer-assortment-list_link" href="">ліжка</a>
+                        </li>
+                        <li class="footer-assortment-list_item">
+                            <a class="footer-assortment-list_link" href="">Крісла</a>
+                        </li>
+                        <li class="footer-assortment-list_item">
+                            <a class="footer-assortment-list_link" href="">шафи</a>
+                        </li>
+                        <li class="footer-assortment-list_item">
+                            <a class="footer-assortment-list_link" href="">Кухні</a>
+                        </li>
+                        <li class="footer-assortment-list_item">
+                            <a class="footer-assortment-list_link" href="">комоди</a>
+                        </li>
+                    </ul>
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="">АкцІї</a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="">Доставка та оплата</a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="">про нас</a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="">контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer-contacts">
+                        <div class="footer-contacts__first">
+                            <a href="" class="footer-contacts__inform">
+                                <svg class="footer-contacts__icon" width="24" height="24">
+                                    <use href="./images/sprayt.svg#icon-map"></use>
+                                </svg>
+                                TEST
+                            </a>
+                            <a class="footer-contacts__inform" href="">
+                                <svg class="footer-contacts__icon" width="24" height="24">
+                                    <use href="./images/sprayt.svg#icon-calendar"></use>
+                                </svg>
+                                Пн-Пт, з 10 до 18
+                            </a>
+                            <a class="footer-contacts__inform" href="">
+                                <svg class="footer-contacts__icon" width="24" height="24">
+                                    <use href="./images/sprayt.svg#icon-f-smartphone"></use>
+                                </svg>
+                                (099) 111 22 33 <br>(099) 222 33 44
+                            </a>
+                        </div>
+                        <p class="footer-contacts__contacts-text">Ми в соціальних мережах:</p>
+                        <ul class="footer-contacts__contacts-list">
+                            <li class="footer-contacts__contacts-item">
+                                <a class="footer-contacts__contacts-link" href="">
+                                    <svg class="footer-contacts__contacts-link__icon" width="25px" height="25px">
+                                        <use href="./images/sprayt.svg#icon-f-telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-contacts__contacts-item">
+                                <a class="footer-contacts__contacts-link" href="">
+                                    <svg class="footer-contacts__contacts-link__icon" width="25px" height="25px">
+                                        <use href="./images/sprayt.svg#icon-f-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-contacts__contacts-item">
+                                <a class="footer-contacts__contacts-link" href="">
+                                    <svg class="footer-contacts__contacts-link__icon" width="25px" height="25px">
+                                        <use href="./images/sprayt.svg#icon-f-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="customer">
+                    <p class="customer-text">&COPY; ТОВ Furniture, працюємо з 2006 року</p>
+                    <a href="" class="customer-link"> <img class="customer-icon" src="./images/company-logo.svg" alt="логотип фірми"> Глянець —
+                        розробка інтернет-магазинів</a>
+                </div>
+            </div>
+            <div class="footer-bgi">
+                <img src="./images/content/footer-img.jpg" alt="фон">
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
